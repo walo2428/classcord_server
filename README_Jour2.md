@@ -1,16 +1,19 @@
 
-# 🧩 ClassCord Server - Déploiement Réseau (Jour 2)
+#  Documentation — Jour 1
 
-## 📌 Objectif du jour
-Rendre le serveur Python accessible sur le réseau local pour permettre aux clients SLAM de s’y connecter. Automatiser le lancement avec `systemd` et préparer une image Docker.
+## Jour 2
+Mardi 17 juin 2025
 
-## 🖥️ Environnement de travail
-- **OS** : Ubuntu Server 22.04 (VM VirtualBox)
-- **Python** : 3.11.4
-- **Réseau** : NAT avec redirection de port (port 12345)
-- **Serveur cloné depuis** : https://github.com/AstrowareConception/classcord-server
+##  Étudiant
+Nom : Omar Talibi  
+Machine : VM Debian  
+Utilisateur : projet
 
-## ✅ Étapes réalisées
+---
+
+## Objectifs de la journée
+
+## Étapes réalisées
 
 ### 1. Clonage et lancement local
 ```bash
@@ -82,16 +85,16 @@ docker run -it --rm -p 12345:12345 classcord-server
 - `DOC_CONNEXION.md` : Instructions de connexion depuis un poste client SLAM
 - `README.md` : État du serveur et configuration réseau
 
-## 🖼️ Captures d’écran (non incluses ici)
-- Connexion d’un client invité
-- Message reçu par le serveur
+##  Captures d’écran (non incluses ici)
+![alt text](<Capture d’écran 2025-06-18 091940.png>)
+![alt text](<Capture d'écran 2025-06-17 113419.png>)
 - `systemctl status classcord.service`
 
-## 🧠 Compétences mobilisées
-- Déploiement réseau local (NAT, firewall)
-- Création de services `systemd`
-- Dockerisation pour portabilité
-- Documentation utilisateur et technique
+##  Compétences mobilisées
+- Rendre un service accessible sur un réseau pédagogique restreint
+- Lancer un service automatiquement au démarrage
+- Créer une image Docker prête à être redéployée
+- Rédiger une documentation technique claire
 
 ---
-📅 Dernière mise à jour : 2025-06-18
+ Dernière mise à jour : 2025-06-18
